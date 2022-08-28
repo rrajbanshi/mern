@@ -1,0 +1,126 @@
+<!-- Create a form with these fields:
+
+first name
+last name
+email
+password
+dob: date
+gender: radio
+state
+country
+pincode: number with min and max attributes
+exam date: read-only field showing today's date
+exam slot: time
+I have read the terms and conditions - checkbox
+submit button
+reset(clear) button
+The form should have a heading(h1) above it saying - "Examinee Details".
+
+The title of the webpage should be "Roadies Exams".
+
+After the form, there should be a disclaimer with a paragraph of text saying - "All the drama in this show is scripted". -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roadies Exams</title>
+</head>
+<body>
+    <h1>Examinee Details</h1>
+    <form action="POST">
+
+        <div>
+           <label for="firstName">First Name</label>
+           <input type="text" id="first" name="firstName">
+        </div>
+        <br>
+        <div>
+            <label for="lastName">Last Name</label>
+            <input type="lastName" id = "last" name="lastName">
+        </div>
+        <br>
+         <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+         </div>
+         <br>
+         <div>
+            <label for="password">Password</label>
+            <input type="password" id = "password" name="password">
+         </div>
+         <br>
+         <div>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id = "dob" name = "dob">
+         </div>
+          <br>
+         <div>
+            <label for ="gender">Gender:</label>
+            <input type="radio" name="gender" id = "male" value="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id = "female" value="female">
+            <label for="female">Female</label>
+         </div>
+         <br>
+         <div>
+            <label for="State">State</label><br/>
+            <select name="state" id="state">
+                <option value="odisha">Odisha</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Maharastra">Maharastra</option>
+                <option value="uttar pradesh">Uttar Pradesh</option>
+                <option value="Nagaland">Nagaland</option>
+                <option value="Assam">Assam</option>
+            </select>
+         </div>
+         <br>
+
+         <div>
+            <label for="country">Country</label><br/>
+            <select name="state" id="state">
+                <option value="India">India</option>
+                <option value="Nepal">Nepal</option>
+                <option value="Bhutan">Bhutan</option>
+                <option value="Bangadesh">Bangadesh</option>
+                <option value="Sri Lanka">Sri Lanka</option>
+                <option value="US">US</option>
+            </select>
+         </div>
+         <br>
+         <label for="pincode">Pincode:</label>
+        <input
+          type="number"
+          id="pincode"
+          name="pincode"
+          min="100000"
+          max="999999"
+        /><br />
+         <br>
+        <label for="start">Exam date:</label>
+       <input type="date" id="start" name="trip-start"
+       value="2022-08-26"
+       min="2022-08-26" max="2022-08-31">
+<br><br>
+      <label for="fli">Exam Slot :</label>
+      <input type="time" list="avail" value="06:00">
+      <datalist id="avail">
+      <option value="06:00">
+      <option value="07:00">
+      <option value="08:00">
+      </datalist>
+
+      <br><br>
+      <div>
+        <input type="checkbox" checked="checked" name="sameadr">I have read the terms and conditions
+      </div>
+      <br><br>
+      <div id="formButtons">
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Clear" />
+      </div
+    </form>
+    <p>All the drama in this show is scripted</p>
+</body>
+</html>
