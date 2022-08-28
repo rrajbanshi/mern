@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="login-backend" method="GET">
+    <fieldset name="addressFeild" id="addressField">
+        <legend>Personal Details</legend>
+        
+        <div id="salutation" name="salutation">
+            <label for="country">Salutation</label><br />
+            <select name="salutation" id="salutation">
+              <option value="Mr">Mr</option>
+              <option value="mrs">Mrs</option>
+              <option value="none">--None--</option>
+            </select>
+          </div>
+           <br>
+          <!-- first -->
+          <div id="firstNameField" name="nameField">
+            <label for="fname">First name:</label
+            >
+            <input
+              type="text"
+              id="fname"
+              name="fname"
+              autocomplete="off"
+              autofocus
+            /> 
+          </div>
+          <br>
+          <div id="lastNameField" name="nameField">
+          <label for="lname">Last name:</label
+            >
+            <input
+              type="text"
+              id="lname"
+              name="lname"
+              autocomplete="off"
+              autofocus
+            />
+            </div>
+             <br>
+          <!-- gender -->
+          <div id="genderField" name="genderField">
+            Gender:
+            <input type="radio" name="gender" id="male" value="male" />
+            <label for="male" autofocus >Male</label>
+            <input type="radio" name="gender" id="female" value="female" />
+            <label for="female">Female</label>
+          </div>
+           <br>
+          <!-- email -->
+          <div id="email" name="emailField">
+            <label for="email">Email:</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                autocomplete="off"
+              />
+              </div>
+              <br>
+              <!-- date of birth -->
+              <div id="dobField" name="dobField">
+                <label for="dob">Date of Birth: </label>
+                <input type="date" id="dob" name="dob" /><br />
+              </div>
+              <br>
+              <!-- address field -->
+
+              <div id="addressField" name="addressField">
+                <label for="address">Address:</label><br />
+                <textarea name="address" id="address" cols="30" rows="5"> </textarea>
+              </div>
+
+              <br>
+              <!-- submit button -->
+              <div id="formButtons">
+                <input type="submit" value="Submit" />
+              </div>
+        
+      </fieldset>
+    </form>
+</body>
+</html>
