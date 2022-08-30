@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discussion 50</title>
+    <style>
+        #standard-box{
+        width: 15%;
+        padding-top: 20px;
+        padding-right: 40px;
+        padding-bottom: 100px;
+        padding-left: 50px;
+        border: 5px solid purple;
+        background-color: bisque;
+        margin-right: 900px;
+        margin-left: 20px; 
+        }
+        #alternate-box{
+        width: 10%;
+        height: 20px;
+        padding-top: 20px;
+        padding-right: 40px;
+        padding-bottom: 75px;
+        padding-left: 50px;
+        border: 5px solid purple;
+        background-color: bisque;
+        margin-right: 1000px;
+        margin-left: 20px;
+        }
+        #paragraph{
+        border: 2px solid purple;
+          margin-left: 5px;
+          padding: 5px;
+        }
+        .box{
+            border: 2px solid purple;
+            padding: 5px;
+        }
+        .items{
+        border: 2px solid cadetblue;
+            padding: 5px;
+            margin-left: 5px;
+        }
+        .inside-box{
+            border: 2px solid purple;
+            padding: 10px;
+        }
+        .box-span{
+        border: 2px solid skyblue;
+          margin-right: 10px;
+          padding: 1px; 
+        }
+
+        .box{
+        padding: 2px;
+        border: 2px solid blueviolet;
+        }
+        .box-inside{
+        padding: 4px;
+        border: 2px solid rgb(104, 104, 238);
+       }
+    </style>
+</head>
+<body>
+    <h1>CSS Boxmodel</h1>
+    <div>
+        <p id = "standard-box">I use standard box model</p>
+        <p id = "alternate-box">I used alternate box model</p>
+        <p id = "paragraph">I am a paragraph. A short one</p>
+    </div>
+    <br>
+    <div class="box">
+        <p>
+            <span class="items">item1</span>
+            <span class="items">item2</span>
+            <span class="items">item3</span>
+        </p>
+        </div>
+         <br>
+         
+        <fieldset class="box">
+            I am another paragraph. Some of the
+            <p class="box-inside">Words</p>
+            have been wrapped in same element.
+        </fieldset>
+</body>
+</html>
