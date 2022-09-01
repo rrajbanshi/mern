@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>discussion 6 modified</title>
+    <style>
+      body{
+        margin: 0;
+        padding: 0;
+        /* font-family: 'Times New Roman', Times, serif; */
+        font-family:  cursive;
+        background-color: grey;
+      }
+      .navbar{
+        background-color: #ea51f3;
+        overflow: hidden;
+        margin-left: 5.5%;
+        margin-right: 5.5%;
+      }
+      .navbar a{
+        float: left;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        padding: 14px 16px;
+        font-size: 17px;
+      }
+      .navbar a:hover{
+        background-color: aliceblue;
+        color: #000;
+      }
+      .navbar .search-bar{
+      float: right;
+      }
+      .navbar .search-bar input[type = text]{
+        padding: 6px;
+        margin-top: 8px;
+        font-size: 17px;
+        border:none;
+        cursor: pointer;
+      }
+      .navbar .search-bar .submitButton{
+         background-color: #000;
+         color: #fff;
+         padding-top: 6px;
+         padding-bottom: 6px;
+         padding-left: 10px;
+         padding-right: 10px;
+         margin-top: 8px;
+         font-size: 15px;
+         margin-right: 15px;
+      }
+      header h2{
+        text-align: center;
+        font-family: cursive;
+        font-style:italic;
+        color: #fff;
+        font-size: 25px;
+      }
+      .article{    
+        margin-left: 5.5%;
+        margin-right: 0.5%;   
+        float:left;
+		width:69%;
+		height:500px;
+        background-color: #fff;
+      }
+      .aside{
+        margin-left: 0.5%;
+        margin-right: 5.5%; 
+       float:right;
+       background-color: #ea51f3;
+	   width:19%;
+	   height: 500px;
+      }
+      .footer {
+        position: fixed;
+        left: 0;
+        margin-left: 5.5%;
+        margin-right: 5.5%;
+        bottom: 0;
+        width: 89%;
+        background-color: #fff;
+        color: #000;
+        margin-bottom: 30px;
+}
+.footer p{
+    margin-left: 10px;
+}
+.article-header{
+    text-align: center;
+    font-weight: 900;
+    font-size: 35px;
+    padding: 10px;
+}
+.pa{
+   margin: 0 14px 0 14px;   
+}
+.Asection{
+    margin: 0 14px 0 14px; 
+    padding: 14px 0px 14px 0px;  
+    font-weight: 900;
+}
+.aside-header{
+    margin: 20px;
+    padding: 14px 0px 14px 0px;  
+    font-weight:bolder;
+    text-align: center;
+}
+.aside ul{
+   margin: 5px 15px 10px 5px;
+   
+}
+.aside ul li{
+    padding-top: 15px;
+}
+    </style>
+    </head>
+    <body>
+      <header>
+        <h2>Header</h2>
+      </header>
+      <div class="navbar">
+        <a href="">HOME</a>
+        <a href="">OUR TEAMS</a>
+        <a href="">PROJECTS</a>
+        <a href="">CONTACT</a>
+      
+       <div class="search-bar">
+        <form action="">
+            <input type="text" placeholder="search Query" name = "search">
+            <button type="submit" class ="submitButton">Go!</button>
+           </form>
+       </div>
+    </div>
+      <br>
+     <article class = "article">
+        <div class = "article-div">
+            <h2 class = "article-header">Article Heading</h2>
+            <p class = "pa">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione id, amet repudiandae ex hic voluptatem voluptatibus ipsum autem fugiat assumenda qui quaerat architecto animi optio non harum quos obcaecati reiciendis.</p>
+       <section class="article-section">
+        <h2 class="Asection">Subsection</h2>
+        <p class = "pa">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur iusto officiis aliquam? Sequi vero incidunt natus obcaecati eligendi molestiae, non modi illo necessitatibus? Rerum dolor incidunt, totam officia molestias quia?</p>
+        <p class = "pa">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quam, saepe, excepturi reiciendis odit ea quidem nulla eveniet veniam sapiente eum natus ex commodi harum exercitationem delectus ratione adipisci eos.</p>
+       </section>
+
+       <section class = "article-section">
+        <h2 class = "Asection">Another subsection</h2>
+        <p class = "pa">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, dicta repudiandae dolores necessitatibus beatae assumenda nam quae inventore magnam harum, officiis eligendi consequuntur odio. Corporis minus magni dicta deserunt obcaecati.</p>
+        <p class = "pa">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident non ab delectus, fugiat veritatis corporis itaque nobis eveniet ad optio? Voluptatum reiciendis tempora sint laboriosam voluptas impedit ipsam ab tenetur.</p>
+       </section>
+        </div>
+    </article>
+      <aside class = "aside">
+       <h2 class = "aside-header">Related</h2>
+       <ul class>
+        <li><a href="">oh I do like to be beside the seaside</a></li>
+        <li><a href="">oh I do like to be beside the sea</a></li>
+        <li><a href="">Although in the north of england</a></li>
+        <li><a href="">It never stops raining</a> </li>
+        <li><a href="">Oh well...</a></li>
+       </ul>
+      </aside>
+      <div class="footer">
+        <p>@copyright 2050 by nobody, All right reserved</p>
+      </div>
+      
+    </body>
+</html>
