@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    
+</head>
+
+<style>
+
+@media only screen and (min-width: 600px) {
+    nav{
+    background-color:red;
+    margin: 4px;
+   }
+   nav a{
+    color: #fff;
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    float: right;
+   }
+   nav button{
+    padding: 4px;
+    margin: 10px;
+   }
+}
+
+
+@media only screen and (max-width: 600px) {
+    nav{
+    padding: 0px;
+    margin: 0px;
+    }
+   nav a{
+    display: none;
+   }
+   nav button{
+    float: right;
+   }
+}
+   
+</style>
+<body>
+
+
+    <nav>
+        <a href="/html/">Home</a> 
+        <a href="/css/">About</a> 
+        <a href="/js/">Contact</a> 
+        <button>click me</button>
+        </nav>
+    
+</body>
+</html>
